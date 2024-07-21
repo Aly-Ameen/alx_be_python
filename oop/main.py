@@ -1,3 +1,6 @@
+
+#0. Dive into Python Magic Methods
+
 from book_class import Book
 
 def main():
@@ -19,7 +22,8 @@ if __name__ == "__main__":
 
 
 
-#second task
+#1. Mastering Inheritance and Composition in Python
+
 from library_system import Book, EBook, PrintBook, Library
 
 def main():
@@ -41,3 +45,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+#2. Exploring Polymorphism and Method Overriding
+
+from polymorphism_demo import Shape, Rectangle, Circle
+
+def main():
+    shapes = [
+        Rectangle(10, 5),
+        Circle(7)
+    ]
+
+    for shape in shapes:
+        print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
+
+if __name__ == "__main__":
+    main()
+
+
+
